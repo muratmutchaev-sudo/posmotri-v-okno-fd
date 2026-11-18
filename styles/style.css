@@ -67,7 +67,7 @@ ol {
   position: relative;
   flex-direction: column;
   gap: 30px;
-  max-height: 298px;
+  height: 298px;
   overflow-y: auto;
 }
 
@@ -76,6 +76,7 @@ ol {
   flex-direction: column;
   flex: 1;
   gap: 26px;
+  height: 100%;
 }
 
 .result {
@@ -83,9 +84,11 @@ ol {
   height: 456px;
 }
 .result__video {
-  width:100%;
+  display: block;
+  width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
+  object-position: center;
 }
 
 .result__video-container {
@@ -122,7 +125,6 @@ ol {
 
 .content__video-card-description-container {
   flex: 1;
-  width: 100%;
   height: 100%;
 }
 
@@ -148,6 +150,12 @@ text-transform: uppercase;
 
 .content__accent {
   color: #545050;
+}
+
+.dash{
+  color: #545050;
+  position: relative;
+  bottom: 10px;
 }
 
 .content__card-link{
@@ -322,6 +330,7 @@ text-transform: uppercase;
 .more-button {
   width: 100%;
   min-height: 34px;
+  margin-bottom: 2px;
 }
 
 .button:hover {
