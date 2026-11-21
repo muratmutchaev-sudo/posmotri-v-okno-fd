@@ -131,7 +131,7 @@ ol {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: #ffffff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -140,7 +140,7 @@ ol {
 
 .title {
   color: #ffffff;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -195,7 +195,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: transparent;
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -249,23 +249,18 @@ ol {
   height: 27px;
   border-width: 1px 0;
   border-style: solid;
-  border-color: #fff;
+  border-color:currentColor;
   padding: 0;
   outline: none;
   color: #fff;
   background-color: transparent;
   appearance: none;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-}
-
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
 }
 
 .search-form__pseudo-checkbox {
@@ -298,7 +293,7 @@ ol {
   text-decoration: none;
 }
 
-.search-form__label:has(.search-form__checkbox:focus-visible) {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -306,7 +301,7 @@ ol {
 .button {
   border: 1px solid #fff;
   color: #ffffff;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   line-height: 22px;
   background-color: transparent;
